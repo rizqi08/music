@@ -1,0 +1,212 @@
+{{> header}}
+{{> navbar}}  
+    {{!-- Konten --}}
+
+  <header></header>
+    <main>
+      {{!-- top track --}}
+      <div class="top-tracks">
+        <p><span class="iconify me-3" data-icon="bi:music-note-list"></span>Top Tracks</p>
+      
+      	<div class="track" style="margin-top: -10px;">
+				  <img src="/public/images/music1.jpg" alt="">
+				  <div class="actions">
+					  <a href="#"><span class="iconify" data-icon="cil:heart"></span></a>
+					  <a id="play_pause"><span class="iconify" data-icon="clarity:play-solid" 
+            style="color: white;"></span></a>
+				  </div>
+
+				  {{!-- <audio src="songs/2.mp3" id="music"></audio> --}}
+
+				  <div class="song-desc">
+				    <p>dev ideas favourite song</p>
+				    <p>Devideas</p>
+				    <p class="message">New</p>
+				  </div>
+				  <div class="actions-2" style="padding: 0;">
+				    <p><a href="#"><span class="iconify" data-icon="gridicons:dropdown"></span></a></p>
+				  </div>
+			  </div>
+
+      	<div class="track" style="margin-top: -20px;">
+				  <img src="/public/images/music1.jpg" alt="">
+				  <div class="actions">
+					  <a href="#"><span class="iconify" data-icon="cil:heart"></span></a>
+					  <a id="play_pause"><span class="iconify" data-icon="clarity:play-solid" 
+            style="color: white;"></span></a>
+				  </div>
+
+				  {{!-- <audio src="songs/2.mp3" id="music"></audio> --}}
+
+				  <div class="song-desc">
+				    <p>dev ideas favourite song</p>
+				    <p>Devideas</p>
+				    <p class="message">New</p>
+				  </div>
+				  <div class="actions-2" style="padding: 0;">
+				    <p><a href="#"><span class="iconify" data-icon="gridicons:dropdown"></span></a></p>
+				  </div>
+			  </div>
+        
+      	<div class="track" style="margin-top: -20px;">
+				  <img src="/public/images/music1.jpg" alt="">
+				  <div class="actions">
+					  <a href="#"><span class="iconify" data-icon="cil:heart"></span></a>
+					  <a id="play_pause"><span class="iconify" data-icon="clarity:play-solid" 
+            style="color: white;"></span></a>
+				  </div>
+
+				  {{!-- <audio src="songs/2.mp3" id="music"></audio> --}}
+
+				  <div class="song-desc">
+				    <p>dev ideas favourite song</p>
+				    <p>Devideas</p>
+				    <p class="message">New</p>
+				  </div>
+				  <div class="actions-2" style="padding: 0;">
+				    <p><a href="#"><span class="iconify" data-icon="gridicons:dropdown"></span></a></p>
+				  </div>
+			  </div>
+
+      	<div class="track" style="margin-top: -20px;">
+				  <img src="/public/images/music1.jpg" alt="">
+				  <div class="actions">
+					  <a href="#"><span class="iconify" data-icon="cil:heart"></span></a>
+					  <a id="play_pause"><span class="iconify" data-icon="clarity:play-solid" 
+            style="color: white;"></span></a>
+				  </div>
+
+				  {{!-- <audio src="songs/2.mp3" id="music"></audio> --}}
+
+				  <div class="song-desc">
+				    <p>dev ideas favourite song</p>
+				    <p>Devideas</p>
+				    <p class="message">New</p>
+				  </div>
+				  <div class="actions-2" style="padding: 0;">
+				    <p><a href="#"><span class="iconify" data-icon="gridicons:dropdown"></span></a></p>
+				  </div>
+			  </div>
+
+      	<div class="track" style="margin-top: -20px;">
+				  <img src="/public/images/music1.jpg" alt="">
+				  <div class="actions">
+					  <a href="#"><span class="iconify" data-icon="cil:heart"></span></a>
+					  <a id="play_pause"><span class="iconify" data-icon="clarity:play-solid" 
+            style="color: white;"></span></a>
+				  </div>
+
+				  {{!-- <audio src="songs/2.mp3" id="music"></audio> --}}
+
+				  <div class="song-desc">
+				    <p>dev ideas favourite song</p>
+				    <p>Devideas</p>
+				    <p class="message">New</p>
+				  </div>
+				  <div class="actions-2" style="padding: 0;">
+				    <p><a href="#"><span class="iconify" data-icon="gridicons:dropdown"></span></a></p>
+				  </div>
+			  </div>
+      </div>
+
+	        {{!-- popular --}}
+		<div class="popular-creator" id="popular-creator">
+        	<p><span class="iconify me-3" data-icon="mdi:trophy-award" 
+        		style="color: #f8f8f8;"></span>Popular Creator</p>
+
+        	<div class="artist-list">
+          		{{#each artis}}
+          		<div class="artist">
+            		<img src='{{this.photo}}' alt="">
+            		<div class="artist-desc">
+              			<p>{{this.name}}</p>
+              			<p><span class="iconify me" data-icon="" style="color: #f8f8f8;"></span>
+              			<span class="iconify ms-3" data-icon="" style="color: #f8f8f8;"></span></p>
+            		</div>
+          		</div>
+		  		{{/each}}
+        	</div>
+		</div>
+
+      		{{!-- comment --}}
+      	{{!-- <div class="user-comment" id="user_comments">
+        <p style="margin-left: 40px;"><span class="iconify me-3" 
+        data-icon="fluent:comment-note-24-regular"></span>Comments</p>
+
+        <div class="colom-comment">
+
+          <div class="comment">
+            <div class="user-n">
+           	 	<p><span class="iconify me-2" data-icon="bx:bx-user" style="color: #f8f8f8; 
+                font-size: 30px;"></span>@rzqmeisani</p>
+           	 	<p></p>
+           	</div>
+           	<div class="user-c">
+           	 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                  sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                  aliquam erat volutpat.</p>
+           	 	<div class="social">
+           	 		<span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+           	 		<span class="iconify" data-icon="uil:instagram-alt"></span>
+           	 	</div>
+           	</div>
+          </div>
+
+          <div class="comment">
+            <div class="user-n">
+           	 	<p><span class="iconify me-2" data-icon="bx:bx-user" style="color: #f8f8f8; 
+                font-size: 30px;"></span>@rzqmeisani</p>
+           	 	<p></p>
+           	</div>
+           	<div class="user-c">
+           	 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                  sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                  aliquam erat volutpat.</p>
+           	 	<div class="social">
+           	 		<span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+           	 		<span class="iconify" data-icon="uil:instagram-alt"></span>
+           	 	</div>
+           	</div>
+          </div>
+
+          <div class="comment">
+            <div class="user-n">
+           	 	<p><span class="iconify me-2" data-icon="bx:bx-user" style="color: #f8f8f8; 
+                font-size: 30px;"></span>@rzqmeisani</p>
+           	 	<p></p>
+           	</div>
+           	<div class="user-c">
+           	 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                  sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                  aliquam erat volutpat.</p>
+           	 	<div class="social">
+           	 		<span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+           	 		<span class="iconify" data-icon="uil:instagram-alt"></span>
+           	 	</div>
+           	</div>
+          </div>
+          <div class="comment">
+            <div class="user-n">
+           	 	<p><span class="iconify me-2" data-icon="bx:bx-user" style="color: #f8f8f8; 
+                font-size: 30px;"></span>@rzqmeisani</p>
+           	 	<p></p>
+           	</div>
+           	<div class="user-c">
+           	 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                  sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                  aliquam erat volutpat.</p>
+           	 	<div class="social">
+           	 		<span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+           	 		<span class="iconify" data-icon="uil:instagram-alt"></span>
+           	 	</div>
+           	</div>
+          </div>
+
+        </div>
+
+    		</div> --}}
+
+    </main>
+    {{!-- Akhir konten --}}
+
+{{>footer}}

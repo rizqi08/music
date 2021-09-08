@@ -1,0 +1,43 @@
+ {{!-- Navbar --}}
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand px-5" href="#">
+          <img src="/public/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active"  href="/music">Music</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active"  href="#popular-creator">Artis</a>
+            </li>
+            {{#if isLogin}}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Master
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="/addMusic">Add Music</a></li>
+                <li><a class="dropdown-item" href="/addArtis">Add Artis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-5 py-2">
+              <a class="btn-start px-3 py-2" href="/logout">Logout</a>
+            </li>
+            {{else}}
+            <li class="nav-item me-5 py-2">
+              <a class="btn-start px-3 py-2" href="/login">start for free</a>
+            </li>
+            {{/if}}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {{!-- akhir navbar --}}

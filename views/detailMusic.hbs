@@ -1,0 +1,30 @@
+{{>header}}
+{{>navbar}}
+
+  <div class="album py-5" style="margin-left: 300px; ">
+    <div class="container" >
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 white">
+        {{!-- {{#each music}} --}}
+        <div class="col" style="width:700px;" >
+          <div class="card shadow-sm">
+            <img src='{{music.cover_music}}' alt='' class='list-thumbnail'/>
+
+            <div class="card-body">
+              <p class="card-text">Judul : {{music.title}}</p>
+              <p class="card-text">Music : {{music.music}}</p>
+              <p class="card-text">Artis : {{music.artis_id}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/editMusic/{{music.id}}" class="btn btn-sm btn-primary">Edit</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{!-- {{/each}} --}}
+      </div>
+    </div>
+  </div>
+
+{{>footer}}

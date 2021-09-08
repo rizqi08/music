@@ -1,0 +1,36 @@
+{{>header}}
+
+{{#if message}}
+  <div class="alert alert-{{message.type}}" role="alert">
+    {{message.message}}
+  </div>
+{{/if}}
+
+{{>navbar}}
+
+<main class="form-signin">
+  <form action="/login" method="POST">
+    <h1 class="h3 mb-3 fw-normal">Create your free account</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" name="email" placeholder="input email">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" name="password" placeholder="Password" >
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div style="color: #ffff;"  class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="w-100 btn btn-lg btn-success green">Login</button>
+        <label style="color: #ffff;">Already have account?</label>
+    <a href="/register" class="w-100 btn btn-lg btn-primary">Register</a>
+    
+  </form>
+</main>
+
+{{>footer}}

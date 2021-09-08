@@ -1,0 +1,49 @@
+{{>header}}
+
+{{#if message}}
+  <div class="alert alert-{{message.type}}" role="alert">
+    {{message.message}}
+  </div>
+{{/if}}
+
+{{>navbar}}
+
+<form action="/editMusic" method="POST" enctype="multipart/form-data"
+style="color: white; margin-top: 40px; width: 600px;
+margin-left:400px;">
+  <input type="hidden" name="id" value="{{music.id}}"/>
+  <input type="hidden" name="oldCover" value="{{music.cover_music}}"/>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input type="text" class="form-control" name="title" value="{{music.title}}">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Music</label>
+    <input type="text" class="form-control" name="music" value="{{music.music}}">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Cover Music</label>
+    <input type="file" id="file" onchange="handleChange()" class="form-control" name="image">
+    <div id="preview-cover"></div>
+  </div>
+  
+
+  <button type="submit" class="w-100 btn btn-lg btn-success green">Update</button>
+
+  <input type="hidden" id="url-cover" value="{{music.cover_music}}">
+</form>
+
+<script>
+  const previewElement = document.getElementById('preview-cover');
+
+  const urlCover = document.getElementById('url-cover').value;
+  previewElement.innerHTML = `<img src="${urlCover}" style="width: 150px;" class="mt-3"/>`
+  
+  function handleChange(){
+    const value = URL.createObjectURL(event.target.files[0]);
+    previewElement.innerHTML = `<img src="${value}" style="width: 150px;" class="mt-3"/>`
+  }
+</script>
+
+
+{{>footer}}

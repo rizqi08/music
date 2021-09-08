@@ -1,0 +1,36 @@
+{{>header}}
+
+{{#if message}}
+  <div class="alert alert-{{message.type}}" role="alert">
+    {{message.message}}
+  </div>
+{{/if}}
+
+{{>navbar}}
+
+<main class="form-signin">
+  <form action="/register" method="POST">
+    <h1 class="h3 mb-3 fw-normal">Register</h1>
+    <div class="form-floating">
+      <input type="email" class="form-control" name="email" placeholder="input email">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" name="password" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <select name="status" class="form-select">
+        <option selected >Option</option>
+        <option value="1">User</option>
+        <option value="2">Admin</option>
+      </select>
+    </div>
+
+    <button type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+    
+  </form>
+</main>
+
+
+{{>footer}}

@@ -1,0 +1,299 @@
+body {
+  background: black !important;
+}
+
+.navbar-brand img {
+  max-height: 55px;
+}
+
+.nav-item {
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.nav-item .nav-link {
+  color: white;
+}
+
+.nav-item .btn-start {
+  background: #08de04;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  padding: 230px 0 360px;
+  background-image: url(/public/images/background.jpg);
+  background-size: cover;
+}
+
+.top-tracks {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.top-tracks p {
+  color: #fff;
+  font-size: 40px;
+  font-family: roboto;
+}
+
+.top-tracks .track {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.top-tracks .track img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.actions {
+  padding: 0 5px;
+  min-width: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.actions p {
+  margin-left: 15px;
+}
+.top-tracks .actions a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  color: #ccc;
+  font-size: 20px;
+}
+
+/*song description part*/
+.song-desc {
+  flex: 1;
+  padding-left: 10px;
+}
+.song-desc .message {
+  position: absolute;
+  bottom: 5px;
+  right: 100px;
+  top: 35px;
+  color: #46ec40;
+  font-size: 20px;
+}
+
+.song-desc p:nth-child(1) {
+  text-transform: capitalize;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.song-desc p:nth-child(2) {
+  opacity: 0.6;
+  font-size: 15px;
+  margin-top: -20px;
+}
+
+/*actions_2*/
+.actions-2 {
+  min-width: 5%;
+  padding: 50px;
+  display: flex;
+  justify-content: right;
+}
+.actions-2 a {
+  color: #fff;
+}
+.actions-2 p {
+  font-size: 60px;
+}
+.actions-2 span {
+  margin-right: 12px;
+}
+
+/* KOmentar */
+.user-comment {
+  margin-top: 30px;
+  min-height: 200px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-comment p {
+  font-size: 40px;
+  font-family: roboto;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.user-comment .colom-comment {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  min-height: 230px;
+}
+
+.colom-comment .comment {
+  width: 100%;
+  padding: 10px;
+  margin-left: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.colom-comment .comment p {
+  color: #fff;
+}
+.comment .user-n {
+  display: flex;
+  height: 30%;
+  width: 100%;
+}
+.comment .user-n p {
+  font-size: 20px;
+}
+.comment .user-n p:nth-child(2) {
+  margin-left: 5px;
+}
+.social {
+  margin-top: -15px;
+  margin-left: 10px;
+}
+.social .iconify {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+.user-c {
+  opacity: 0.7;
+  word-break: break-all;
+}
+.user-c p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* popular */
+.popular-creator {
+  margin-top: 30px;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-creator p {
+  font-size: 40px;
+  color: #fff;
+  font-family: roboto;
+  margin-left: 30px;
+}
+
+.artist-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+.artist {
+  position: relative;
+  height: 180px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.artist:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+}
+.artist:not(:first-child) {
+  margin-left: 10px;
+}
+
+.artist-desc {
+  width: 100%;
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+}
+
+.artist-desc p:nth-child(1) {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.artist-desc p:nth-child(2) {
+  color: #fff;
+  font-size: 15px;
+}
+.artist img {
+  width: 10em;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* form login */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin h1 {
+  color: #fff;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.green {
+  background-color: #46ec40 !important;
+}
+
+/* pricing */
+.container h1 {
+  color: #46ec40;
+}
+
+/* footer */
+footer {
+  margin-top: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: 213px;
+  left: 57px;
+  top: 515px;
+  background: #c4c4c4;
+}
+
